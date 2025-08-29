@@ -1,4 +1,4 @@
-// rewrite features to include the provided image Source URL and consistent copy
+
 export const features = [
   {
     id: 1,
@@ -9,7 +9,6 @@ export const features = [
       "Ut enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.",
       "Sed do reprehenderit accusantium doloremque laudantium.",
     ],
-    // MUST use the provided Source URL when embedding the image
     image: "./pic_1.jpeg",
   },
   {
