@@ -3,19 +3,24 @@ import FeatureShowcase from "./components/FeatureShowcase"
 export default function App() {
   return (
     <main>
-      <section style={{ maxWidth: 960, margin: "0 auto", padding: "64px 16px" }}>
-        <h1 style={{ fontSize: 28, fontWeight: 600, color: "#111827" }}>Feature Showcase (Internship Task)</h1>
-        <p style={{ marginTop: 16, maxWidth: 640, color: "#4B5563" }}>
+      {/* Intro Section */}
+      <section className="max-w-3xl mx-auto px-4 py-5 sm:py-20 mb-[1.5rem]">
+        <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900">
+          Feature Showcase (Internship Task)
+        </h1>
+        <p className="mt-4 text-gray-600 text-sm sm:text-base max-w-xl">
           Scroll to the section below. It becomes sticky, auto-switches features 1 → 5, then the page scrolls normally
           after the last feature. Click items on the right or use arrows to switch.
         </p>
       </section>
 
+      {/* Feature Showcase */}
       <FeatureShowcase />
 
-      <section style={{ maxWidth: 960, margin: "0 auto", padding: "96px 16px" }}>
-        <h2 style={{ fontSize: 24, fontWeight: 600 }}>Normal scrolling resumes here.</h2>
-        <p style={{ marginTop: 16, maxWidth: 640, color: "#4B5563" }}>
+      {/* Outro Section */}
+      <section className="max-w-3xl mx-auto px-4 py-16 sm:py-20 mt-[1rem]">
+        <h2 className="text-xl sm:text-2xl font-semibold text-gray-900">Normal scrolling resumes here.</h2>
+        <p className="mt-4 text-gray-600 text-sm sm:text-base max-w-xl">
           This content demonstrates that the sticky effect ends after feature 5.
         </p>
       </section>
